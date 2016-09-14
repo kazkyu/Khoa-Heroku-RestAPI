@@ -26,7 +26,7 @@ function deleteCourseGrade(req,res,next)
     res.json(data_provider.removeGrade(req.params.student_id,req.params.course_id));
 }
 
-function getAllGrades()
+function getAllGrades(req,res,next)
 {
     res.json(data_provider.getAllGrades());
 }
