@@ -58,7 +58,7 @@ exports.removeCourseById = function(id)
       unset(courseData[index]);
       ret = true;
     }
-  }
+  });
 
   return ret;
 }

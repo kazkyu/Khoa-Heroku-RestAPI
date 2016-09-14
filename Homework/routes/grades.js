@@ -28,7 +28,7 @@ function deleteCourseGrade(req,res,next)
 
 function getAllGrades()
 {
-    res.json(data_provider.getAllGrades();
+    res.json(data_provider.getAllGrades());
 }
 
 router.route('/')

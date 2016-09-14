@@ -43,23 +43,23 @@ exports.updateGrade = function(new_grade)
       courseGradeData[index] = new_grade;
       ret = studentData[index];
     }
-  }
+  });
 
   return $ret;
-);
+}
 
 exports.getGrade = function(student_id,course_id)
 {
   return courseGradeData.filter(function(course_grade){
     if(course_grade.student_id == student_id &&
       course_grade.course_id == course_id)
-      {
+    {
         return course_grade;
-      }
     }
-  );
+  });
+}
 
-  exports.getAllGrades = function()
-  {
+exports.getAllGrades = function()
+{
     return courseGradeData;
 }
